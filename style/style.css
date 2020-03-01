@@ -27,7 +27,7 @@ header {
     top: 0;
     width: 100%;
     background-color: white;
-    z-index: 2;
+    z-index: 9999999;
 }
 
 h1 {
@@ -43,7 +43,7 @@ h2 {
     color: #004;
 }
 
-.yellowLine {
+.yellyellowLine {
     border-left: 10px solid #ffd626;
     margin-right: 5px;
 }
@@ -808,7 +808,10 @@ footer {
 
 @media screen and (max-width: 1025px) {
     .whyChooseUs {
-        padding-bottom: 50px;
+        padding-bottom: 50px;  
+    }
+    .logo {
+        justify-content: left;
     }
 }
 
@@ -824,6 +827,9 @@ footer {
     }
     .head_ul li {
         padding-bottom: 30px;
+    }
+    .logo {
+        justify-content: left;
     }
 }
 
@@ -873,6 +879,9 @@ footer {
     }
     .ourServicesItemGroup .item {
         margin-right: 0;
+    }
+    .logo {
+        justify-content: left;
     }
     .ourServices_items {
         padding: 0 5%;
@@ -1213,7 +1222,7 @@ li:hover>span::after {
 }
 
 .ac-container .toggle::after {
-    
+    content: "+";
     float: right;
     font-size: 30px;
     font-weight: bold;
