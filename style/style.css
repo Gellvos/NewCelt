@@ -805,7 +805,11 @@ footer {
 
 
 /* MEDIA QUERYS */
-
+@media screen and (min-width: 960px) {
+    .nav {
+        display: none;
+    }
+}
 @media screen and (max-width: 1025px) {
     .whyChooseUs {
         padding-bottom: 50px;  
@@ -813,8 +817,11 @@ footer {
     .logo {
         justify-content: left;
     }
+    .search-btn  {
+        display: none;
+    }
 }
-
+@media screen and (max-width: 1025px) {}
 @media screen and (max-width: 960px) {
     header {
         justify-content: center;
@@ -924,6 +931,9 @@ footer {
 }
 
 @media screen and (max-width: 670px) {
+    .search-btn{
+        display: block;
+    }
     .preHeader {
         justify-content: center;
     }
@@ -942,14 +952,6 @@ footer {
     .slider2img {
         display: none;
     }
-}
-
-.sub-title {
-    color: #64728a;
-    margin-bottom: -20px;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: Poppins, sans-serif;
 }
 
 .whyChooseUs_text h4 {
@@ -986,6 +988,10 @@ footer {
         display: block;
         margin-top: 16px;
     }
+    .navbar-search{
+        display: inline;
+    }
+}
     .has-dropdown {
         position: relative;
     }
@@ -1009,7 +1015,6 @@ footer {
         transform: translateX(3px);
         box-shadow: -4px 0 0 0 #ffd626;
     }
-}
 
 .head_ul span,
 .logoLinks span {
@@ -1294,6 +1299,7 @@ li:hover>span::after {
 }
 
 @media (max-width: 800px) {
+    
     .preHeader div {
         width: 100%;
     }
@@ -1504,8 +1510,8 @@ li:hover>span::after {
     ul.menu>li.has-dropdown:hover ul {
         display: block;
     }
-
-   
+}
+ 
     .menu>.has-dropdown,
      ::after {
       
@@ -1524,5 +1530,27 @@ li:hover>span::after {
     }
     .menu>li:hover {
         background: none;
-    }
-}
+    }   
+ul.nav li ul, input {
+    display: none;
+    list-style-type: none;
+    
+  }
+  ul.nav li input:checked + label + ul {
+    display: block;
+    content: "\f00d";
+  }
+  .fa::before{
+    color: FFD626;
+  }
+  
+.search-btn{
+   border:none; 
+   background: transparent;
+  }
+  .search-form::before{
+      display: none;
+  }
+  .fa-phone{
+    content: "\f095";
+  }
